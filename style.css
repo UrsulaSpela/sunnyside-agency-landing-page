@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main {
+  width: 1440px;
+  height: 4200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.mobile {
+  display: none;
+}
+/* ----- HEADER ------*/
+header {
+  grid-column: 1/5;
+  height: 800px;
+  background: url(images/desktop/image-header.jpg) no-repeat;
+  background-size: cover;
+}
+#navbar {
+  display: flex;
+  justify-content: right;
+  margin-right: 40px;
+  font-size: 18px;
+}
+#logo {
+  width: 160px;
+  height: 30px;
+  position: relative;
+  top: 45px;
+  left: 40px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 40px;
+  font-family: "Barlow", sans-serif;
+}
+nav button {
+  width: 135px;
+  height: 55px;
+  background: white;
+  border-radius: 27px;
+  border: none;
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 55px;
+  position: relative;
+  top: 100px;
+  letter-spacing: 5px;
+}
+#arrow {
+  position: relative;
+  top: 200px;
+  left: 700px;
+}
+/*------ MEDIA QUERIES -------*/
+@media only screen and (max-width: 375px) {
+  body {
+    width: 375px;
+  }
+  #main {
+    grid-template-columns: 1fr;
+    width: 375px;
+  }
+  .mobile {
+    display: block;
+  }
+  /* ----- HEADER ------*/
+  header {
+    background: url(images/mobile/image-header.jpg) no-repeat;
+    height: 540px;
+    background-size: cover;
+  }
+  #navbar {
+    display: none;
+    padding: 25px;
+    background: white;
+    width: 325px;
+    height: 300px;
+    position: relative;
+    top: 80px;
+    left: 25px;
+    text-align: center;
+  }
+  #logo {
+    width: 120px;
+    height: 25px;
+    top: 25px;
+  }
+  #navbar a {
+    color: gray;
+  }
+  nav button {
+    background: hsl(51, 100%, 49%);
+  }
+  header h1 {
+    font-size: 45px;
+  }
+  #arrow {
+    left: 180px;
+    top: 150px;
+  }
+}
