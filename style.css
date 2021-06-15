@@ -334,6 +334,11 @@ footer a:hover {
     padding: 60px 20px;
     text-align: center;
   }
+  #transform hr,
+  #stand-out hr {
+    top: -10px;
+    left: 110px;
+  }
   #glass {
     grid-row: 4/5;
     height: 315px;
@@ -352,6 +357,7 @@ footer a:hover {
     width: 375px;
     background: url(images/mobile/image-graphic-design.jpg) no-repeat;
     background-size: cover;
+    padding: 400px 25px 60px 25px;
   }
   #photograpy {
     grid-row: 7/8;
@@ -359,6 +365,7 @@ footer a:hover {
     width: 375px;
     background: url(images/mobile/image-photography.jpg) no-repeat;
     background-size: cover;
+    padding: 400px 25px 60px 25px;
   }
   #clients {
     grid-row: 8/9;
@@ -378,10 +385,19 @@ footer a:hover {
     grid-row: 9/10;
     height: 375px;
     width: 375px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery-item {
+    width: 187.5px;
+    height: 187.5px;
   }
   footer {
     grid-row: 10/11;
     height: 350px;
     width: 375px;
+  }
+  #links {
+    width: 350px;
   }
 }
